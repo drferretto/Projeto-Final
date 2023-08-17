@@ -1,0 +1,286 @@
+
+/* editando as seções*/
+#sobre, #servicos, #portfolio, #contato {
+    padding: 10rem 0;
+}
+/*hero section*/
+.bgimage {
+    height: 100vh;
+    position: relative;
+    background: url("images/globalBusiness.jpg");
+    background-size: cover;
+}
+.heroTitle {
+    font-size: 4.5rem;
+}
+.heroDesc {
+    font-size: 2rem;
+}
+.heroText {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+.aboutImage {
+    width: 80%;
+}
+.servicesText .card {
+    height: 280px;
+    cursor: pointer;
+    padding: 0 2rem;
+}
+.servicesIcon {
+    height: 36px;
+    text-align: center;
+    width: 100%;
+}
+.cardTitle {
+    text-align: center;
+}
+.card:hover .servicesIcon{
+    color: #008000;
+}
+.servicesText:hover {
+    border: 1px solid #008000;
+}
+
+/*Estilização do Cabeçalho*/
+.navbar {
+    background-color: #316A99;
+}
+.navbar a {
+    color: white;
+    padding: 0.5rem;
+}
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+    border-radius: 4px;
+}
+
+.contactIcon {
+    font-size: 2.5rem;
+    color: #9E835A;
+}
+
+/*Estilização do footer*/
+footer {
+    background-color: #316A99;
+}
+.footerIcon {
+    font-size: 2rem;
+    color: white;
+}
+.footerIcon:hover {
+    color: #c4c4c4;
+}
+.footerDev {
+    background-color: #9E835A;
+}
+
+/*efeito de glassmorphismo*/
+.glass {
+    position: absolute;
+    height: 40%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* From https://css.glass */
+background: rgba(31, 105, 25, 0.18);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(4.7px);
+-webkit-backdrop-filter: blur(4.7px);
+}
+
+/* Button */
+button {
+    background: transparent;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    outline: 0;
+    }
+  
+  /* Custom */
+  button {
+    display: inline-block;
+    position: relative;
+    padding: 20px 38px;
+    top: 0;
+    font-size: 30px;
+    font-family: "Open Sans", Helvetica;
+    border-radius: 4px;
+    border-bottom: 1px solid rgba( 28, 227, 125, 0.5 );
+    background: rgba( 22, 230, 137, 1 );
+    color: #fff;
+    box-shadow: 0px 0px 0px rgba( 15, 165, 60, 0.1 );
+    
+    -webkit-transform: translateZ(0);
+       -moz-transform: translateZ(0);
+        -ms-transform: translateZ(0);
+            transform: translateZ(0);
+    
+    -webkit-transition: all 0.2s ease;
+       -moz-transition: all 0.2s ease;
+        -ms-transition: all 0.2s ease;
+            transition: all 0.2s ease;
+  }
+  
+  button:hover {
+    top: -10px;
+    box-shadow: 0px 10px 10px rgba( 15, 165, 60, 0.2 );
+    
+    -webkit-transform: rotateX(20deg);
+       -moz-transform: rotateX(20deg);
+        -ms-transform: rotateX(20deg);
+            transform: rotateX(20deg);
+  }
+  
+  button:active {
+    top: 0px;
+    box-shadow: 0px 0px 0px rgba( 15, 165, 60, 0.0 );
+    background: rgba( 20, 224, 133, 1 );
+  }
+  
+  h2 {
+    margin: 0;
+    color: #8495a5;
+    font-size: 2.5em;
+    font-weight: 300;
+  }
+  #contact-form {
+    max-width: 1208px;
+    max-width: 75.5rem;
+    margin: 0 auto;
+  }
+  #contact, label, input[name="submit"] {
+    position: relative;
+  }
+  label > span, input, textarea, button {
+    box-sizing: border-box;
+  }
+  label {
+    display: block;
+  }
+  label > span {
+    display: none;
+  }
+  input, textarea, button {
+    width: 100%;
+    padding: 0.5em;
+    border: none;
+    font: 300 100%/1.2 Ubuntu, sans-serif;
+  }
+  input[type="text"], input[type="email"], textarea {
+    margin: 0 0 1em;
+    border: 1px solid #ccc;
+    outline: none;
+  }
+  input.invalid, textarea.invalid {
+    border-color: #d5144d;
+  }
+  textarea {
+    height: 6em;
+  }
+  input[type="submit"], button {
+    background: #61AAE5;
+    color: #333;
+  }
+  input[type="submit"]:hover, button:hover {
+    background: #61AAE5;
+  }
+  @media screen and (min-width: 30em) {
+    #contact-form h2 {
+      margin-left: 26.3736%;
+      font-size: 2em;
+      line-height: 1.5;
+    }
+    label > span {
+      vertical-align: top;
+      display: inline-block;
+      width: 26.3736%;
+      padding: 0;
+      border: 1px solid transparent;
+      text-align: right;
+    }
+    input, textarea, button {
+      width: 73.6263%;
+      line-height: 1.5;
+    }
+    textarea {
+      height: 8em;
+    }
+    input[type="submit"], button {
+      margin-left: 26.3736%;
+    }
+  }
+  @media screen and (min-width: 48em) {
+    #contact-form {
+      text-align: justify;
+      line-height: 0;
+    }
+    #contact-form:after {
+      content: '';
+      display: inline-block;
+      width: 100%;
+    }
+    #contact-form h2 {
+      margin-left: 17.2661%;
+    }
+    #contact-form form, #contact-form aside {
+      vertical-align: top;
+      display: inline-block;
+      width: 65.4676%;
+      text-align: left;
+      line-height: 1.5;
+    }
+    #contact-form aside {
+      width: 30.9353%;
+    }
+  }
+
+/* FOOTER START*/
+
+footer {background: #316A99;}
+
+#footer{
+  padding-top: 30px;
+  padding-bottom :80px;
+}
+
+.footer-icon {
+padding-top: 50px;
+ display:block;
+ text-align:center;
+ list-style-type: none;
+ 
+}
+
+.footer-animated:hover {
+  transform: rotate(360deg);
+  transition: all 0.6s ease;
+}
+  
+
+.footer-icon a{
+  border-bottom: 4px solid #21F5F7;
+  border-radius: 500%;
+  text-align: center;
+  padding: 10px;
+  
+  }
+
+
+.footer-icon i{
+  font-size: 50px;
+  color: #FFF5F7;
+  
+}
+
+ul.footer-icon li{
+  margin-top:35px;
+}

@@ -1,0 +1,111 @@
+html {
+    /* suavização do scroll */
+    scroll-behavior: smooth;
+}
+/* Corpo da aplicação */
+body {
+    /* background */
+    background-color: #f2e7dc;
+
+    /* texto  */
+    color: #0d0d0d;
+text-align: justify;
+
+/* alinhamento e tamanho */
+/* 1rem = 16px, tela grande = font-size: 16px, tela media = 15px, tela pequena = 14px */
+/* medida de pixel mantem a imagem fixa */
+/* medida de pocentagem torna a imagem mais resposniva à tela */
+width: 85%
+margin: auto;
+}
+/* Seções dos livros */
+section {
+    /* espaçamento dentro da seção */
+    /* existem tres maneiras de definir o padding  */
+    padding: 64px 256px;
+    /* definindo top e bot juntos, e left right juntos  */
+    
+    /* padding: 64px 256px 64px 256px  */
+    /* definindo apenas numeros na ordem horária: top right botom left  */
+
+    /* definindo todos em linhas separadas */
+    /* padding-left: 256px; */
+    /* padding-right: 256px; */
+    /* padding-bottom: 64px; */
+    /* padding-top: 64px; */
+}
+/* Tabela */
+table {
+    /* largura */
+    width: 100%;}
+td {background-color: #a9d9d0;
+    /* pode ser configurada desta forma, ou na forma shorthand abaixo */
+    /* border-color: #0d0d0d; */
+    /* border-width: 1px; */
+    /* border-style: solid; */
+}
+td, th {
+    border: #000 solid 1px;
+    border-radius: 4px;
+    /* alinhamento do texto */
+    text-align: center;
+}
+tr {
+    /* background */
+    background-color: #038c7f;}
+
+/* títulos, textos e parágrafos */
+p { text-align: justify;
+    text-indent: 50px;}
+
+h1, h2, h3 {text-align: center;}
+
+h3 {color: #000;}
+
+/* Links */
+a:link {color: #f2e7dc}  /*link normal*/
+a:visited {color: #95bfb8}  /*link visitado*/
+a:hover {color: #025454}  /*mouse sobre o link*/
+a:active {color: #0d0d0d;}  /*link selecionado*/
+
+/* Imagem */
+img {width: 300px;
+    display: block;
+    margin: auto;
+    border-radius: 50px;}
+
+/* Classes e IDs */
+.bookTitle {
+    background-color: #a9d9d0;
+    color: #027373;
+    text-align: center;}
+
+#sectionHP, #sectionPJ, #sectionJN {background-color: #a9d9d0;}
+
+#header {background-color: #038c7f;
+        color: #f2e7dc;
+        padding: 20px;
+        margin-bottom: 0px;}
+
+#yourLibrary {text-indent: 0px; /*para sobrescrever outra config = !important*/
+            text-align: center;}
+
+#sumary {
+    background-color: #038c7f;
+    color: #f2e7dc;
+    padding: 20px;
+    margin-bottom: 50px;
+    border-radius: 0 0 50px 50px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* roda pé */
+footer{
+    background-color: #038c7f;
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
